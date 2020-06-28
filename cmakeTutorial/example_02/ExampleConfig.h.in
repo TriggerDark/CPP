@@ -1,0 +1,2 @@
+#include Example_VERSION_MAJOR @Example_VERSION_MAJOR@
+#include Example_VERSION_MINOR @Example_VERSION_MINOR@
