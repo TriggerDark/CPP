@@ -8,7 +8,7 @@ int main()
     putchar(10); putchar('\n');
 
     // getchar
-    int a; 
+    int a;
     char b;
     scanf("%d", &a);
     getchar();

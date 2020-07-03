@@ -19,8 +19,8 @@ int main(void)
     // 筛子
     for (int i=0; i<=100; i++)
     {
-        if (i%3 != 0)   
-            continue;     
+        if (i%3 != 0)
+            continue;
         printf("%d\n", i);
     }
     return 0;

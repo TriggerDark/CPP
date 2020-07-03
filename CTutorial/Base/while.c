@@ -14,7 +14,7 @@ int main(void)
 {
 #if 0
     int i=0;
-    while (i < 10) 
+    while (i < 10)
     {
         printf("%d\n", i);
         i++;
@@ -40,10 +40,10 @@ int main(void)
     } while (i <= 100);
     printf("%d\n", sum);
 #endif
-    
+
     int flag = 0;
     char ch;
-    do 
+    do
     {
         printf("pls input [y/n] to continue:");
         scanf("%c", &ch);
@@ -55,7 +55,7 @@ int main(void)
         }
     }while (ch != 'n' && ch != 'N');
 
-    if (flag) 
+    if (flag)
     {
         printf("come on boy!\n");
     }
