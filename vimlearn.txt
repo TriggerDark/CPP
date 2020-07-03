@@ -57,3 +57,26 @@ ctrl + f
 ctrl + b
 ctrl + d
 ctrl + u
+
+ci"
+yi"
+di"
+fv  --> find v
+df: --> 删除
+cf:
+yf:
+
+0: 回到开头
+w: 跳到下一个单词开头
+
+E W/w --> 
+ctrl + u
+
+ctrl+v可视块模式（列模式）
+
+:split
+:vsplit
+
+:tabe
+:(+/-)tabnext
+:tabedit filename
