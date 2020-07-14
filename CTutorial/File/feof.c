@@ -28,7 +28,7 @@ int main(int argc, char** argv) {
     char ch;
     // feof 检测文件结束标志，或为1表示结束，为0表示没有结束
     // 会导致多读一次字符，标志位检测滞后所导致的
-    while ((ch = fgetc(pf)) && !feof(pf)) {
+    while ((ch = fgetc(pf)) != EOF && !feof(pf)) {
         printf("%x->%c\n", ch, ch);
     }
     // ch = fgetc(pf);
