@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 int main(int argc, char** argv) {
-    char* p = "123\n";
+    char* p = "12a3\n";
     int num = atoi(p);
     printf("%d", num);
     return 0;
