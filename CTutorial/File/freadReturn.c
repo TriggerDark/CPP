@@ -9,6 +9,19 @@
 #include <stdlib.h>
 
 int main(int argc, char *argv[]) {
+    FILE *pf = fopen("xx.txt", "w+");
+    char buf[1024] = "123456";
+    fwrite((void *)buf, 1, 6, pf);
+    rewind(pf);
+
+    char rbuf[1024];
+    int n;
+    n = fread((void *)rbuf, 1, 1024, pf);
+    printf("n = %d\n", n);
+    return 0;
+}
+
+int main2(int argc, char *argv[]) {
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     FILE *pf = fopen("xx.txt", "w+");
 
@@ -16,7 +29,7 @@ int main(int argc, char *argv[]) {
     rewind(pf);
 
     int n = 0;
-    // 一个int4个字节，以五个int一块
+    // 要读的字段的个数：5
     while ((n = fread((void *)arr, 4, 5, pf)) > 0) {
         for (int i = 0; i < n; i++) {
             printf("%d\t", arr[i]);
